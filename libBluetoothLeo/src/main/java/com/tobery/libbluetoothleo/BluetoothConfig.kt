@@ -11,8 +11,8 @@ data class BluetoothConfig(
     )
 
 data class BluetoothScanRules(
-    var serviceUUIDs: List<UUID>? = null,
-    var deviceNames: List<String>? = null,
+    var serviceUUIDs: UUID? = null,
+    var deviceNames: String? = null,
     var deviceMac: String? = null,
     var scanTimeout: Long = 10000L
 )
